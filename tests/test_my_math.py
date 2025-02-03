@@ -32,8 +32,15 @@ def test_itshoudlreturnpositivenumber():
 def test_botharenegativenumbers():
     res = absolute_sum(-1, -2)
     assert res == 3
+def test_whateveritisnow():
+    res = absolute_sum(1, -5)
+    assert res == 6
 # Check for understanding
 ## Test calculate age
 
-#def test_calculate_birth_year():
-#    res = calculate_birth_year()
+def test_calculate_birth_year():
+    res = calculate_birth_year(2040, 98, 'no')
+    assert res == 1942
+def test_calculate_birth_year_2():
+    res = calculate_birth_year(2025, 25, 'yes')
+    assert res == 2000
